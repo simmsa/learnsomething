@@ -1,0 +1,191 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 22, ../sass/screen.scss */
+body {
+  font-family: "Lato";
+  font-weight: 100;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #2b5180 !important;
+  background: -moz-radial-gradient(center, circle cover, #3e75b9 0%, #2b5180 100%) !important;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3e75b9), color-stop(100%, #2b5180)) !important;
+  background: -webkit-radial-gradient(center, circle cover, #3e75b9 0%, #2b5180 100%) !important;
+  background: -o-radial-gradient(center, circle cover, #3e75b9 0%, #2b5180 100%) !important;
+  background: -ms-radial-gradient(center, circle cover, #3e75b9 0%, #2b5180 100%) !important;
+  background: radial-gradient(center, circle cover, #3e75b9 0%, #2b5180 100%) !important;
+  background-color: #2b5180 !important;
+}
+
+/* line 31, ../sass/screen.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/screen.scss */
+input[type="submit"], button {
+  background-color: #802b30;
+  color: #fff;
+  border: 1px solid #6d2529;
+  border-radius: 5px;
+  font-family: "Lato";
+  font-size: 55px;
+  cursor: pointer;
+  font-weight: 100;
+  padding: 10px 20px;
+  transition-duration: .3s;
+  text-align: center;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  box-shadow: inset 0 3px 15px #933137;
+}
+
+/* line 58, ../sass/screen.scss */
+input[type="submit"]:hover, button:hover {
+  background-color: #6d2529;
+  border: 1px solid #341113;
+  box-shadow: inset 0 0 20px #0d0505;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* line 69, ../sass/screen.scss */
+input[type="text"] {
+  font-family: Lato;
+  font-weight: 300;
+  background-color: #fff;
+  color: #2b5180;
+  font-size: 40px;
+  border: 1px solid #1e395a;
+  padding: 15px;
+  box-shadow: inset 0 0 10px #05090d;
+  border-radius: 5px;
+  width: 80%;
+  margin: 35px 10%;
+  text-align: center;
+  transition-duration: .3s;
+}
+
+/* line 85, ../sass/screen.scss */
+input:-webkit-autocomplete {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+  -webkit-font-family: Lato;
+  font-weight: 100;
+}
+
+/* line 92, ../sass/screen.scss */
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  -webkit-text-fill-color: #333;
+}
+
+/* line 96, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #2b5180;
+}
+
+/* line 100, ../sass/screen.scss */
+::selection {
+  background-color: #749dd0;
+}
+
+/* line 105, ../sass/screen.scss */
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 109, ../sass/screen.scss */
+input[type="text"]:focus {
+  color: #fff;
+  outline-color: transparent;
+  outline-style: none;
+  background-color: #2b5180;
+  box-shadow: 0 0 25px #9ab8dd;
+}
+
+/* line 117, ../sass/screen.scss */
+label, p.or {
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  display: block;
+  float: left;
+  clear: both;
+}
+
+/* line 127, ../sass/screen.scss */
+p.or {
+  width: 100%;
+  margin-bottom: 35px;
+}

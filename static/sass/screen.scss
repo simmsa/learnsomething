@@ -1,0 +1,133 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@mixin radial-background($color){
+    background: $color !important;
+    background: -moz-radial-gradient(center, circle cover, lighten($color, 15%) 0%, $color 100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, lighten($color, 15%)), color-stop(100%, $color)) !important;
+    background: -webkit-radial-gradient(center, circle cover, lighten($color, 15%) 0%, $color 100%) !important;
+    background: -o-radial-gradient(center, circle cover, lighten($color, 15%) 0%, $color 100%) !important;
+    background: -ms-radial-gradient(center, circle cover, lighten($color, 15%) 0%, $color 100%) !important;
+    background: radial-gradient(center, circle cover, lighten($color, 15%) 0%, $color 100%) !important;
+    background-color: $color !important;
+}
+
+$blue: #2b5180;
+$green: #802b30;
+
+body{
+    font-family: "Lato";
+    font-weight: 100;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    @include radial-background($blue);
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type="submit"], button{
+    background-color: $green;
+    color: #fff;
+    border: 1px solid darken($green, 5%);
+    // width: 40%;
+    
+    border-radius: 5px;
+    font-family: "Lato";
+    font-size: 55px;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 10px 20px;
+    transition-duration: .3s;
+    // margin-top: 10px;
+    text-align: center; 
+    display: block;
+    // float: left;
+    clear: both;
+    margin: 0 auto;
+    box-shadow: inset 0 3px 15px lighten($green, 5%);
+}
+
+input[type="submit"]:hover, button:hover{
+    background-color: darken($green, 5%);
+    border: 1px solid darken($green, 20%);
+    // border-radius: 15px;
+    box-shadow: inset 0 0 20px darken($green, 30%);
+    // color: $green;
+    // padding: 15px;
+    // letter-spacing: 3px;
+    text-shadow: 0 0 2px rgba(255,255,255,.5);
+}
+
+input[type="text"]{
+    font-family: Lato;
+    font-weight: 300;
+    background-color: #fff;
+    color: $blue;
+    font-size: 40px;
+    border: 1px solid darken($blue, 10%);
+    padding: 15px;
+    box-shadow: inset 0 0 10px darken($blue, 30%);
+    border-radius: 5px;
+    width: 80%;
+    margin: 35px 10%;
+    text-align: center;
+    transition-duration: .3s;
+}
+
+input:-webkit-autocomplete {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+    -webkit-font-family: Lato;
+    font-weight: 100;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+} 
+::-webkit-input-placeholder {
+   color: $blue;
+}
+
+::selection{
+    background-color: lighten($blue, 30%);
+
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input[type="text"]:focus{
+    color: #fff;
+    outline-color: transparent;
+    outline-style: none;
+    background-color: $blue;
+    box-shadow: 0 0 25px lighten($blue, 40%);
+}
+
+label, p.or{
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+p.or{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+
+

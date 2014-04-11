@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Learn Something</title>
+    
+    <meta name="description" content="This is the description that shows up when you search Google!" />
+    
+    <meta name="robots" content="index, follow" />
+    
+    <meta name="keywords" content="#" />
+    
+    <meta name="author" content="#" />
+
+    {% load staticfiles %}
+
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/screen.css' %}" />
+
+    <!-- <script type="text/javascript" src="#"></script> -->
+
+</head>
+
+<body> 
+
+    <form method="get" action="/learn/" autocomplete="off">
+
+        <label for="query">What would you like to learn?</label>
+        <input type="text" name="q" id="id_q" placeholder="Type Here...">
+        <input type="submit" value="Get Learning &rsaquo;">
+    </form> 
+
+    <p class="or">or</p>
+
+    <button><a href="/random.html">Learn Something Random &rsaquo;</a></button>
+
+</body>
+
+</html>
